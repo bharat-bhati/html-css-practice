@@ -1,0 +1,256 @@
+
+
+
+/* CSS reset ---------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Anton', sans-serif; */
+
+        /* CSS HEX */
+    --desert-sand: #EBD0B6ff;
+    --liver-dogs: #B66521ff;
+    --chinese-red: #A42F15ff;
+    --lemon-curry: #CE9C22ff;
+    --ecru: #B0A37Eff;
+
+    /* CSS HSL */
+    --desert-sand: hsla(29, 57%, 82%, 1);
+    --liver-dogs: hsla(27, 69%, 42%, 1);
+    --chinese-red: hsla(11, 77%, 36%, 1);
+    --lemon-curry: hsla(43, 72%, 47%, 1);
+    --ecru: hsla(44, 24%, 59%, 1);
+
+  
+}
+
+/* variables --------------------------------------------*/
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar ----------------------------------------------------------------------------------------------*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin:10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin:3px 6px; 
+    border-radius: 5px; 
+}
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+content: "";
+background-color:black;
+position: absolute;
+width:100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+
+}    
+
+#navbar ul li{
+    list-style:none ;
+    font-size:1.5rem ;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration:none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    display: block;
+}
+
+
+/* ------- Home --------------------------------------------------------------------------------------------------- */
+#home{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    background:url(bg5.webp) no-repeat center center/cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: -8;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+
+#home p{
+color: white;
+/* text-align: center; */
+font-size: 1rem;
+text-shadow: 2px 1px #000000;
+/* font-family: 'Anton', sans-serif; */
+}
+
+
+
+/* ------- services ---------------------------------------------------------------------------------------- */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+
+border: 3px solid rgb(0, 0, 0);
+padding: 34px;
+margin: 3px 10px;
+margin-bottom: 10px;
+border-radius: 30px;
+background-color:rgb(241, 240, 240);
+
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: flex;
+
+}
+
+
+
+
+
+/* utility ------------------------------------------------------------------------------------------ */
+
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+font-size: 1.5rem;
+padding: 12px;
+
+}
+#boo.h-primary.center{
+    font-size: 2.8rem;
+    padding: 35px;
+}
+
+.btn{
+    color: white;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: "";
+    border-radius: 5px;
+    margin: 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+} 
+
+/* client section  -----------------------------------------------------------------------------------------*/
+
+#client-section{
+/* height: 727px; */
+text-shadow: 2px 2px #c4c4c4;
+position: relative;
+
+/* position: relative; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(bg44.png) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    padding: 5px 2px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+.clinte-item{
+    padding: 2rem;
+}
+#clients img{
+    height: 124px;
+}
+
+/* contact section  ---------------------------------------------------------------------------------------------  */ 
+
+
+.contact{
+    position:relative;
+
+
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* background: url() no-repeat center center/cover;  */
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}

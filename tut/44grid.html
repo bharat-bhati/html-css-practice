@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          'footer footer footer footer';
+      }
+      .item {
+        background-color: peachpuff;
+        border: 2px solid black;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      #footer {
+        grid-area:footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="item">home about contact us</div>
+      <div id="section" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        reiciendis accusamus aliquid tempora? Vel fuga mollitia itaque vitae
+        totam tenetur aperiam, non unde corporis illo sint optio debitis! Ipsum,
+        quos.
+      </div>
+      <div id="aside" class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        quis?
+      </div>
+      <!-- <div class="item">item-1</div>
+      <div class="item">item-2</div>
+      <div class="item">item-3</div>
+      <div class="item">item-4</div>
+      <div class="item">item-5</div>
+      <div class="item">item-6</div>
+      <div class="item">item-7</div>
+      <div class="item">item-8</div>
+      <div class="item">item-9</div>
+      <div class="item">item-10</div> -->
+    </div>
+    <footer class="item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptate,
+      vero atque architecto illum alias officia ipsam iste fuga mollitia
+      incidunt, iure expedita aliquam facere? Perspiciatis ipsum provident
+      accusamus nesciunt!
+    </footer>
+  </body>
+</html>
